@@ -19,14 +19,14 @@ body, html {
 .display {
 	width: auto;
 	height: 80px;
-    padding: 40px 0;
-    margin: 10px;
+        padding: 40px 0;
+        margin: 10px;
 	background: #2c3333;
 	border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    margin-bottom: 0px;
+        border-top-right-radius: 14px;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        margin-bottom: 0px;
    
 }
 .buttons {
