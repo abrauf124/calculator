@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaSctipt Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+ 
+<body>
+	<script>
+	function displayNumbers(result){
+		form.displayResult.value=form.displayResult.value+result;
+		
+	}
+    function allClr(){
+        form.displayResult.value="";
+    }
+    function clrLast(){
+        form.displayResult.value=form.displayResult.value.substring(0,form.displayResult.value.length*1-1)
+    }
+	</script>
+	<div class="container">
+		<form name="form">
+		    <div class="display">
+		        <input type="text" placeholder="0" name="displayResult" />
+		    </div>
+		    <div class="buttons">
+                <div class="row">
+		           
+	                <input class="red" type="button" name="aclrb" value="AC" onClick="allClr()">
+	                <input type="button" name="clrb" value="C" onClick="clrLast()">
+                    <input type="button" name="percb" value="%" onClick="displayNumbers(percb.value)">
+                    <input type="button" name="divb" value="/" onClick="displayNumbers(divb.value)">
+                </div>
+                
+	            <div class="row">
+                    <input type="button" name="b7" value="7" onClick="displayNumbers(b7.value)">
+	                <input type="button" name="b8" value="8" onClick="displayNumbers(b8.value)">
+	                <input type="button" name="b9" value="9" onClick="displayNumbers(b9.value)">
+	                <input type="button" name="mulb" value="*" onClick="displayNumbers(mulb.value)">
+	            </div>
+		
+	            <div class="row">
+		            <input type="button" name="b4" value="4" onClick="displayNumbers(b4.value)">
+	                <input type="button" name="b5" value="5" onClick="displayNumbers(b5.value)">
+	                <input type="button" name="b6" value="6" onClick="displayNumbers(b6.value)">
+	                <input type="button" name="subb" value="-" onClick="displayNumbers(subb.value)">
+                </div>
+		
+                <div class="row">
+		            <input type="button" name="b1" value="1" onClick="displayNumbers(b1.value)">
+	                <input type="button" name="b2" value="2" onClick="displayNumbers(b2.value)">
+	                <input type="button" name="b3" value="3" onClick="displayNumbers(b3.value)">
+                    <input type="button" name="addb" value="+" onClick="displayNumbers(addb.value)">
+                    
+	            </div>
+		
+	            <div class="row">
+                    <input type="button" name="b00" value="00" onClick="displayNumbers(b00.value)">
+		            <input type="button" name="b0" value="0" onClick="displayNumbers(b0.value)">
+	                <input type="button" name="dotb" value="." onClick="displayNumbers(dotb.value)">
+                    <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+                </div>
+                
+                
+                
+            </div>
+		
+		</form>
+	</div>
+</body>
+	
+</html>
